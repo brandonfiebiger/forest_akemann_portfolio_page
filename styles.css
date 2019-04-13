@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+}
+
+
+.projects-nav {
+  background: orangered;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
