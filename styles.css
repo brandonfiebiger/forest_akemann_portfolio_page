@@ -13,9 +13,26 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Work Sans', sans-serif;
 }
 
-.projects-nav a {
-  color: black;
+.projects-nav_tag {
   font-size: 4rem;
+  color: #292438;
+  opacity: 0;
+  margin: 0;
+  transition: all .3s;
+  font-weight: 500;
+}
+
+.projects-nav .lunaire {
+  transform: translateY(-.5rem);
+}
+
+.visible {
+  opacity: 1;
+}
+
+.translate_y {
+  transform: translateY(-.5rem);
 }
