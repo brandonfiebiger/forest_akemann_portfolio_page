@@ -2,13 +2,20 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
 
 .projects-nav {
-  background: orangered;
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.projects-nav a {
+  color: black;
+  font-size: 4rem;
 }
