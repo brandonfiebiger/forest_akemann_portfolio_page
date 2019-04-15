@@ -13,14 +13,15 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Work Sans', sans-serif;
 }
 
 .projects-nav_tag {
+  text-transform: uppercase;
+  font-family: 'Work Sans', sans-serif;
   font-size: 4rem;
+  margin-bottom: 1rem;
   color: #292438;
   opacity: 0;
-  margin: 0;
   transition: all .3s;
   font-weight: 500;
 }
