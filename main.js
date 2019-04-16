@@ -12,8 +12,12 @@ $(document).ready(() => {
 
   setTimeout(() => {
     $('.splash-page').addClass('display_none');
-    $('.projects-nav').removeClass('display_none');
-  }, 3000)
+    $('.projects-nav_container').removeClass('display_none');
+  }, 3000);
+
+  setTimeout(() => {
+    $('.projects-nav_header-tag').addClass('visible');
+  }, 3500)
 
 
   const tags = ['lunaire', 'zogra', 'newmoon', 'hawaii'];
