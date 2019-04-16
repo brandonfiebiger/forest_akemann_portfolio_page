@@ -6,8 +6,32 @@ a {
   text-decoration: none;
 }
 
-.projects-nav {
+.projects-nav_container {
   height: 100vh;
+  width: 100%;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.projects-nav_header {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.projects-nav_header-tag {
+  margin: 3rem;
+  color: #332D33;
+  font-family: inherit;
+  font-weight: 300;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: all .5s;
+}
+
+.projects-nav {
+  height: 90vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -17,13 +41,13 @@ a {
 
 .projects-nav_tag {
   text-transform: uppercase;
-  font-family: 'Work Sans', sans-serif;
+  font-family: inherit;
   font-size: 4rem;
   margin-bottom: 1rem;
   color: #292438;
   opacity: 0;
   transition: all .3s;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .projects-nav .lunaire {
