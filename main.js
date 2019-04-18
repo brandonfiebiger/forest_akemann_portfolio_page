@@ -33,3 +33,8 @@ $(document).ready(() => {
     }, times[i]);
   }
 });
+
+$('.lunaire').on('click', () => {
+  $('.lunaire-page').removeClass('display_none');
+  $('.projects-nav_container').slideUp();
+});
