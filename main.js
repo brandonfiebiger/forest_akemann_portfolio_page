@@ -32,4 +32,4 @@ $(document).ready(() => {
       $(`.${tags[i]}`).addClass('visible');
     }, times[i]);
   }
-})
+});
