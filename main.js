@@ -37,4 +37,8 @@ $(document).ready(() => {
 $('.lunaire').on('click', () => {
   $('.lunaire-page').removeClass('display_none');
   $('.projects-nav_container').slideUp();
+
+  setTimeout(() => {
+    $('.lunaire-page_header').addClass('slide-header-up');
+  }, 1000)
 });
