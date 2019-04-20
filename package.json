@@ -1,0 +1,28 @@
+{
+  "name": "forest_akemann_portfolio_page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonfiebiger/forest_akemann_portfolio_page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandonfiebiger/forest_akemann_portfolio_page/issues"
+  },
+  "homepage": "https://github.com/brandonfiebiger/forest_akemann_portfolio_page#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@dogstudio/highway": "^2.1.2",
+    "babel-core": "^6.26.3",
+    "gsap": "^2.1.2",
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.19.0"
+  }
+}
