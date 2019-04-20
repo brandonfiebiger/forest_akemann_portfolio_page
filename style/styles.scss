@@ -128,12 +128,44 @@ a {
 }
 
 .first-text-section {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
+  transform: translateY(6rem);
+  transition: all .5s;
+
+  &_header-two {
+    transform: translateY(2rem);
+  }
+
+  &-left-half {
+    float: left;
+  }
+
+  &-right-half-row {
+    float: right;
+    width: 80%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .sub-header {
+      display: inline-block;
+    }
+
+    .full-paragraph {
+      display: inline-block;
+      width: 70%;
+    }
+  }
 
   div {
     ul {
       list-style: none;
+
+      li {
+        font-size: .95rem;
+      }
     }
   }
 }
@@ -141,10 +173,13 @@ a {
 
 .sub-header {
   font-weight: 600;
-  font-size: 1.5rem;
-  margin-top: 3rem;
+  font-size: 1.9rem;
 }
 
 .slide-header-up {
   height: 55vh;
+}
+
+.slide-text-up {
+  transform: translateY(4rem);
 }

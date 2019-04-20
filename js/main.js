@@ -51,6 +51,11 @@ export const showLunaire = () => {
   setTimeout(() => {
     $('.project-header').removeClass('invisible');
   }, 1500);
+
+  setTimeout(() => {
+    $('.first-text-section').removeClass('invisible');
+    $('.first-text-section').addClass('slide-text-up');
+  }, 2500);
 }
 
 $('.lunaire').on('click', () => showLunaire());
