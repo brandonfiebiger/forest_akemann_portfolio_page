@@ -1,5 +1,9 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -115,14 +119,32 @@ a {
   align-items: center;
 
   h1 {
-    margin: 0;
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    transform: translateY(-.75rem);
     color: #FFFFFF;
     transition: all .5s ease-in;
   }
 }
 
+.first-text-section {
+  width: 80%;
+  margin: 0 auto;
+
+  div {
+    ul {
+      list-style: none;
+    }
+  }
+}
+
+
+.sub-header {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
 .slide-header-up {
-  height: 50vh;
+  height: 55vh;
 }
