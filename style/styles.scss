@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.projects-nav_container {
+  height: 100vh;
+  width: 100%;
+  font-family: inherit;
+}
+
+.projects-nav_header {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.projects-nav_header-tag {
+  margin: 3rem;
+  color: #332D33;
+  font-family: inherit;
+  font-weight: 300;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: all .5s ease-in;
+}
+
+.projects-nav {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-nav_tag {
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 4rem;
+  margin-bottom: .5rem;
+  color: #292438;
+  opacity: 0;
+  transition: all .3s ease-in;
+  font-weight: 600;
+}
+
+.projects-nav .lunaire {
+  transform: translateY(-.5rem);
+}
+
+.visible {
+  opacity: 1;
+}
+
+.translate_y {
+  transform: translateY(-.5rem);
+}
+
+.splash-page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash-page_logo {
+  background-image: linear-gradient(90deg, #fff 0%, #fff 2%, #292438 00%);
+  background-size: 200%;
+  width: 30rem;
+  transition: all .5s;
+}
+
+.slider {
+  background-size: 5000%;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.display_none {
+  display: none;
+}
+
+
+.header-img {
+  width: 100%;
+}
+
+
+.lunaire-page {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  font-family: inherit;
+}
+
+.lunaire-page_header {
+  height: 100vh;
+  width: 100%;
+  transition: all .3s;
+  background-image: url("../assets/0+\(0;00;00;00\)_4.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    transition: all .5s ease-in;
+  }
+}
+
+.slide-header-up {
+  height: 50vh;
+}
