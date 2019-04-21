@@ -105,6 +105,7 @@ a {
   height: 100vh;
   width: 100%;
   font-family: inherit;
+  word-wrap:break-word;
 }
 
 .lunaire-page_header {
@@ -141,9 +142,13 @@ a {
     float: left;
   }
 
+  &-right-half {
+    width: 95%;
+  }
+
   &-right-half-row {
     float: right;
-    width: 80%;
+    width: 70%;
     height: 30vh;
     display: flex;
     flex-direction: row;
@@ -156,6 +161,7 @@ a {
     .full-paragraph {
       display: inline-block;
       width: 70%;
+      word-wrap:break-word;
     }
   }
 
@@ -173,7 +179,7 @@ a {
 
 .sub-header {
   font-weight: 600;
-  font-size: 1.9rem;
+  font-size: 1.4rem;
 }
 
 .slide-header-up {
@@ -181,5 +187,68 @@ a {
 }
 
 .slide-text-up {
-  transform: translateY(4rem);
+  transform: translateY(5rem);
+}
+
+.img-first {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  transform: translateY(8rem);
+}
+
+.nav-container {
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+}
+
+// .corner-nav {
+//   &,
+//   &::after {
+    
+//     height: 2px;
+//     width: 2rem;
+//     background: black;
+//     display: inline-block;
+//   }
+
+//   &::after {
+//     content: "";
+//     width: 1rem;
+//     transform: translateX(1rem);
+//   }
+// }
+
+.navigation-nav {
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  z-index: 2000;
+  transition: all .3s;
+
+  ul {
+    list-style: none;
+  }
+}
+
+.navigation-button {
+  background: black;
+  height: 1rem;
+  width: 1rem;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+
+  &-appearance {
+
+  }
+}
+
+.slide-nav-out {
+  left: 0;
 }
