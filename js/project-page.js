@@ -1,3 +1,6 @@
 import { showLunaire } from './main';
 
-$(document).ready(() => showLunaire(), 1000)
+$(document).ready(() => showLunaire());
+
+
+
