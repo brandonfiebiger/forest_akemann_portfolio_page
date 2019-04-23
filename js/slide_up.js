@@ -13,7 +13,10 @@ class SlideUp extends Highway.Transition {
       from.remove();
       done();
     }})
-    // .fromTo(to.children[0], .4, { height: '100vh' }, { height: '50vh' })
+    .fromTo(to.children[1], .08, { height: '100vh' }, { height: '55vh' }, '+=.5')
+    .fromTo(to.children[1].children[1], .2, {opacity: '0'}, {opacity: '1'}, '+=.75')
+    .fromTo(to.children[2], .2, {opacity: '0', transform: 'translateY(6rem)'}, {opacity: 1, transform: 'translateY(5rem)'}, '+=1')
+    // .FromTo('.lunaire-page_header', 5, {opacity: '0'}, {opacity: '1'}, 5)
   }
   //responsible for page going out
   out({ from, done }) {
