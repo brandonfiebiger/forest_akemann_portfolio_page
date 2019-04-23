@@ -111,7 +111,7 @@ a {
 .lunaire-page_header {
   height: 100vh;
   width: 100%;
-  transition: all .3s;
+  transition: all .3s ease-in;
   background-image: url("../assets/0+\(0;00;00;00\)_4.jpg");
   background-size: cover;
   background-position: center;
@@ -223,15 +223,33 @@ a {
 .navigation-nav {
   height: 100vh;
   width: 100vw;
-  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #292438;
   position: fixed;
   top: 0;
   left: 100%;
   z-index: 2000;
   transition: all .3s;
 
+  p {
+    color: #EFEFEF;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+  }
+
   ul {
     list-style: none;
+    text-align: center;
+
+    a {
+      color: #EFEFEF;
+      font-size: 4rem;
+    }
   }
 }
 

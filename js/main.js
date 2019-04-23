@@ -12,6 +12,10 @@ $(document).on('click', (e) => {
   if (e.target.className === 'navigation-button') {
     $('.navigation-nav').addClass('slide-nav-out');    
   }
+
+  if (e.target.className === 'exit-nav') {
+    $('.navigation-nav').removeClass('slide-nav-out');
+  }
 });
 
 $(document).ready(() => {
@@ -64,4 +68,4 @@ export const showLunaire = () => {
   }, 2500);
 }
 
-$('.lunaire').on('click', () => showLunaire());
+// $('.lunaire').on('click', () => showLunaire());
