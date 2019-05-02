@@ -1,10 +1,12 @@
 import Highway from '@dogstudio/highway';
 import { TimelineLite } from 'gsap';
 import SlideUp from './slide_up';
+import SlideUpNoFade from './slide_up_no_fade';
 
 const H = new Highway.Core({
   transitions: {
-    lunaire: SlideUp
+    lunaire: SlideUp,
+    home: SlideUpNoFade
   }
 });
 
