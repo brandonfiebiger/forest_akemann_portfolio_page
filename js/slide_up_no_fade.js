@@ -12,7 +12,7 @@ class SlideUpNoFade extends Highway.Transition {
     timeline.fromTo(to, 0.3, { top: '100%', display: 'block' }, {top: '0%' , display: 'block', onComplete: function(){
       from.remove();
       done();
-    }})
+    }}, '+=.5')
     .fromTo(to.children[0].children, .00, { opacity: '0' }, { opacity: '1' }, '0')
     // .fromTo(to.children[0].children[1], .00, { opacity: '0' }, { opacity: '1' }, '0')
     .fromTo(to.children[1], .00, { opacity: '0', display: 'none' }, { opacity: '1', display: 'flex' }, '0')
