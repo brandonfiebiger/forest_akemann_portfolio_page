@@ -263,6 +263,7 @@ a {
   top: 2rem;
   right: 2rem;
   cursor: pointer;
+  z-index: 10000;
 
   &-appearance {
 
@@ -274,12 +275,30 @@ a {
 }
 
 .about-page {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  transition: all .3s ease-in;
+
+  .text-area {
+    height: 30vh;
+    width: 50%;
+    transform: translateY(-8rem) translateX(6rem);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
   
 
   .page-container {
     height: 100vh;
     width: 100%;
     position: absolute;
+
+
+    .navigation-button {
+      background: #fff;
+    }
   }
 
   &-left {
@@ -295,6 +314,23 @@ a {
     height: 100vh;
     width: 75%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      float: right;
+      color: #fff;
+      font-size: 9rem;
+      transition: all .3s ease-in;
+    }
+
+    p {
+      color: #fff;
+      width: 80%;
+      transform: translateY(-1rem);
+      transition: all .3s ease-in;
+    }
   }
 
   .forrest-pic {
@@ -302,6 +338,7 @@ a {
     width: 65%;
     bottom: 0;
     right: 50%;
+    transition: all .3s ease-in;
   }
 }
 
