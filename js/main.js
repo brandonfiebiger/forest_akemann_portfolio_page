@@ -8,7 +8,8 @@ const H = new Highway.Core({
   transitions: {
     lunaire: SlideUp,
     home: SlideUpNoFade,
-    about: SlideUpAboutPage
+    about: SlideUpAboutPage,
+    hawaii: SlideUp
   }
 });
 
@@ -42,8 +43,8 @@ $(document).ready(() => {
   }, 3500)
   
   
-  const tags = ['lunaire', 'zogra', 'newmoon', 'hawaii'];
-  const times = [4000, 4500, 5000, 5500]
+  const tags = ['lunaire', 'zogra', 'hawaii'];
+  const times = [4000, 4500, 5000]
   
   for (let i = 0; i < tags.length; i++) {
     
@@ -57,9 +58,9 @@ $(document).ready(() => {
 });
 
 
-export const showLunaire = () => {
+export const showProject = () => {
   setTimeout(() => {
-    $('.lunaire-page_header').addClass('slide-header-up');
+    $('.project-page_header').addClass('slide-header-up');
   }, 1000);
   
   setTimeout(() => {
