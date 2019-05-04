@@ -5,6 +5,8 @@
 
 body {
   font-family: 'Nunito Sans', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -345,10 +347,104 @@ hr {
   }
 }
 
+.color-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 8rem;
+  width: 100%;
+  position: relative;
+
+  h3 {
+
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 8%;
+    top: 3%;
+  }
+}
+
+.color-container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 3%;
+}
+
+.color-block {
+  width: 16rem;
+  height: 16rem;
+  margin-right: 2rem;
+  margin-bottom: 3rem;
+}
+
+.fonts-image {
+  margin: 0 auto;
+  display: block;
+  width: 75%;
+}
+
+.ux-design-text {
+  margin: 0 auto;
+  margin-top: 4rem;
+  width: 55%;
+
+  &>* {
+    margin-bottom: 2rem;
+  }
+}
+
+.image-block {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 3rem;
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    font-size: .75rem;
+    float: right;
+  }
+}
+
+.hawaii-sail-full-site {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
 .nav-container {
   position: fixed;
   top: 3rem;
   right: 3rem;
+}
+
+footer {
+
+  margin-top: 4rem;
+  height: 6rem;
+  display: flex;
+  position: relative;
+
+  h3 {
+    font-size: 3rem;
+    align-self: center;
+  }
+
+  .footer-right {
+    background: #292438;
+    width: 80%;
+    height: 6rem;
+    position: absolute;
+    right: 0;
+  }
+
+  &>* {
+    display: inline-block;
+  }
 }
 
 // .corner-nav {
