@@ -102,7 +102,7 @@ a {
 }
 
 
-.lunaire-page {
+.project-page {
   position: absolute;
   height: 100vh;
   width: 100%;
@@ -110,7 +110,7 @@ a {
   word-wrap:break-word;
 }
 
-.lunaire-page_header {
+.project-page_header {
   height: 100vh;
   width: 100%;
   transition: all .3s ease-in;
@@ -127,7 +127,12 @@ a {
     transform: translateY(-.75rem);
     color: #FFFFFF;
     transition: all .5s ease-in;
+    // opacity: 1;
   }
+}
+
+.hawaii-header {
+  background-image: url("../assets/hawaii-header.jpg");
 }
 
 .first-text-section {
@@ -135,6 +140,7 @@ a {
   margin: 0 auto;
   transform: translateY(6rem);
   transition: all .5s;
+  // opacity: 1;
 
   &_header-two {
     transform: translateY(2rem);
@@ -151,7 +157,8 @@ a {
   &-right-half-row {
     float: right;
     width: 70%;
-    height: 30vh;
+    margin-bottom: 6rem;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -192,12 +199,108 @@ a {
   transform: translateY(5rem);
 }
 
-.img-first {
-  display: block;
+.hawaii-strategy {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-around;
   margin: 0 auto;
-  width: 70%;
-  transform: translateY(8rem);
+  position: relative;
+  transform: translateY(5rem);
+
+  &-text {
+    width: 56%;
+    height: auto;
+    margin-left: 44%;
+    transform: translateY(4rem);
+
+    h2 {
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      margin-bottom: 2rem;
+      width: 80%;
+    }
+  }
+
+  .img-section {
+    position: absolute;
+    left: 0;
+    width: 34%;
+    
+    .img-first {
+      width: 100%;
+    }
+    
+    .wavy {
+      width: 85%;
+      position: absolute;
+      bottom: 8%;
+      left: 60%;
+    }
+  }
 }
+
+hr {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo-description {
+  margin: 0 auto;
+  margin-top: 4rem;
+  width: 40%;
+  text-align: left;
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-weight: light;
+  }
+}
+
+.round-designs {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 5rem;
+
+  img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  }
+
+  p {
+    font-size: .75rem;
+  }
+
+  .round-description {
+    float: right;
+    margin-top: 2rem;
+  }
+}
+
+// .second-round-designs {
+//   width: 60%;
+//   margin: 0 auto;
+//   margin-top: 5rem;
+
+//   img {
+//     width: 100%;
+//     display: block;
+//     margin: 0 auto
+//   }
+
+//   p {
+//     font-size: .75rem;
+//   }
+// }
 
 .nav-container {
   position: fixed;
