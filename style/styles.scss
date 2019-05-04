@@ -286,21 +286,26 @@ hr {
   }
 }
 
-// .second-round-designs {
-//   width: 60%;
-//   margin: 0 auto;
-//   margin-top: 5rem;
+.third-round-designs {
+  margin: 0 auto;
+  margin-top: 4rem;
+  width: 90%;
 
-//   img {
-//     width: 100%;
-//     display: block;
-//     margin: 0 auto
-//   }
+  p {
+    font-size: .75rem;
+  }
 
-//   p {
-//     font-size: .75rem;
-//   }
-// }
+  .logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+      width: 30rem;
+      margin-right: 2rem;
+    }
+  }
+}
 
 .nav-container {
   position: fixed;
