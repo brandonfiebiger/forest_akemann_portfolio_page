@@ -1,6 +1,6 @@
-import { showLunaire } from './main';
+import { showProject } from './main';
 
-$(document).ready(() => showLunaire(), 1000);
+$(document).ready(() => showProject(), 1000);
 
 
 
