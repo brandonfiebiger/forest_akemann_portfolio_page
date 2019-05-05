@@ -116,7 +116,7 @@ a {
   height: 100vh;
   width: 100%;
   transition: all .3s ease-in;
-  background-image: url("../assets/0+\(0;00;00;00\)_4.jpg");
+  background-image: url("../assets/lunaire-header.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -146,7 +146,7 @@ a {
   margin: 0 auto;
   transform: translateY(6rem);
   transition: all .5s;
-  // opacity: 1;
+  // height: 65vh;
 
   &_header-two {
     transform: translateY(2rem);
@@ -235,7 +235,7 @@ a {
   .img-section {
     position: absolute;
     left: 0;
-    width: 34%;
+    width: 30%;
     
     .img-first {
       width: 100%;
@@ -280,7 +280,7 @@ a {
   .img-section {
     position: absolute;
     left: 10%;
-    width: 34%;
+    width: 30%;
     
     .img-first {
       width: 100%;
@@ -353,8 +353,9 @@ hr {
   width: 80%
 }
 
-.illustrator {
+.zogra-image-container {
   margin-top: 12rem;
+  width: 80%;
 
   img {
     margin-bottom: 4rem;
@@ -363,6 +364,11 @@ hr {
   &>* {
     margin-bottom: 4rem;
   }
+}
+
+.zogra-full {
+  width: 80%;
+  display: block;
 }
 
 .third-round-designs {
@@ -575,9 +581,9 @@ footer {
 }
 
 .navigation-button {
-  background: black;
-  height: 1rem;
-  width: 1rem;
+
+  height: 2rem;
+  width: 2rem;
   position: fixed;
   top: 2rem;
   right: 2rem;
@@ -585,9 +591,42 @@ footer {
   z-index: 10000;
 
   &-appearance {
+  &,
+  &::after {
+    
+    height: 2px;
+    width: 2rem;
+    background: black;
+    display: inline-block;
+  }
+
+  &::after {
+    content: "";
+    width: 1rem;
+    transform: translateX(1rem);
+  }
+
+
 
   }
 }
+
+// .corner-nav {
+//   &,
+//   &::after {
+    
+//     height: 2px;
+//     width: 2rem;
+//     background: black;
+//     display: inline-block;
+//   }
+
+//   &::after {
+//     content: "";
+//     width: 1rem;
+//     transform: translateX(1rem);
+//   }
+// }
 
 .slide-nav-out {
   left: 0;
@@ -661,25 +700,6 @@ footer {
   }
 }
 
-// .about-page-left {
-//   background: #fff;
-//   float: left;
-//   height: 100vh;
-//   width: 25%;
-// }
-
-// .about-page-right {
-//   background: #292438;
-//   float: right;
-//   height: 100vh;
-//   width: 75%;
-// }
-
-// .forrest-pic {
-//   position: absolute;
-//   width: 50%;
-// }
-
 .horizantal-scroll {
   margin-top: 12rem;
   position: relative;
@@ -727,4 +747,28 @@ footer {
     margin-bottom: 4rem;
     transform: translateX(-5%);
   }
+}
+
+.lunaire-image-section {
+  width: 80%;
+  margin: 0 auto;
+  transform: translateY(4rem);
+  margin-top: 4rem;
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    font-weight: 600;
+    font-size: .75rem;
+  }
+}
+
+.lunaire-paragraph {
+  width: 44rem;
+  margin: 0 auto;
+  margin-top: 14rem;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
