@@ -137,6 +137,10 @@ a {
   background-image: url("../assets/hawaii-header.jpg");
 }
 
+.zogra-header {
+  background-image: url('../assets/zogra-round-header.jpg');
+}
+
 .first-text-section {
   width: 85%;
   margin: 0 auto;
@@ -246,6 +250,51 @@ a {
   }
 }
 
+.zogra-first {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-around;
+  margin: 0 auto;
+  position: relative;
+  transform: translateY(5rem);
+
+  &-text {
+    width: 56%;
+    height: auto;
+    margin-left: 46%;
+    transform: translateY(20%);
+
+    h2 {
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      margin-bottom: 2rem;
+      width: 80%;
+    }
+  }
+
+  .img-section {
+    position: absolute;
+    left: 10%;
+    width: 34%;
+    
+    .img-first {
+      width: 100%;
+    }
+    
+    .wavy {
+      width: 85%;
+      position: absolute;
+      bottom: 8%;
+      left: 60%;
+    }
+  }
+}
+
 hr {
   width: 90%;
   margin: 0 auto;
@@ -263,6 +312,17 @@ hr {
 
   p {
     font-weight: light;
+  }
+}
+
+.zogra-strategy {
+  margin-top: 7rem;
+}
+
+.zogra-design {
+ 
+  p {
+    margin-bottom: 2rem;
   }
 }
 
@@ -602,3 +662,46 @@ footer {
 //   position: absolute;
 //   width: 50%;
 // }
+
+.sketches {
+  margin-top: 12rem;
+  position: relative;
+
+  p {
+    position: absolute;
+    top: -3rem;
+    right: 35%;
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: scroll;
+
+    img {
+      width: 25%;
+      height: 0%;
+      margin-right: 2rem;
+    }
+  }
+}
+
+.narrowed-down {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 8rem;
+  text-align: right;
+  position: relative;
+
+  img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  p {
+    margin-bottom: 4rem;
+    transform: translateX(-5%);
+  }
+}
