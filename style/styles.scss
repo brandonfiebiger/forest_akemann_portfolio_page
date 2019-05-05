@@ -348,6 +348,23 @@ hr {
   }
 }
 
+.typeface-1 {
+  margin-top: 9rem;
+  width: 80%
+}
+
+.illustrator {
+  margin-top: 12rem;
+
+  img {
+    margin-bottom: 4rem;
+  }
+
+  &>* {
+    margin-bottom: 4rem;
+  }
+}
+
 .third-round-designs {
   margin: 0 auto;
   margin-top: 4rem;
@@ -663,7 +680,7 @@ footer {
 //   width: 50%;
 // }
 
-.sketches {
+.horizantal-scroll {
   margin-top: 12rem;
   position: relative;
 
@@ -684,6 +701,12 @@ footer {
       height: 0%;
       margin-right: 2rem;
     }
+  }
+}
+
+.corners {
+  img {
+    width: 40%;
   }
 }
 
