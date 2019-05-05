@@ -9,7 +9,8 @@ const H = new Highway.Core({
     lunaire: SlideUp,
     home: SlideUpNoFade,
     about: SlideUpAboutPage,
-    hawaii: SlideUp
+    hawaii: SlideUp,
+    "zogra-round": SlideUp
   }
 });
 
