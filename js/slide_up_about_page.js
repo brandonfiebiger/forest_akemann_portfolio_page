@@ -13,9 +13,9 @@ class SlideUpAboutPage extends Highway.Transition {
       from.remove();
       done();
     }}, '+=.5')
-    .fromTo(to.children[1].children[2].children[0].children[0], .2, { opacity: '0' }, { opacity: '1' }, '1')
-    .fromTo(to.children[1].children[2].children[0].children[1], .5, { opacity: '0' }, { opacity: '1' }, '2')
-    .fromTo(to.children[1].children[2].children[1], .5, { opacity: '0' }, { opacity: '1' }, '2')
+    .fromTo(to.children[1].children[2].children[1].children[0], .2, { opacity: '0' }, { opacity: '1' }, '1')
+    .fromTo(to.children[1].children[2].children[1].children[1], .5, { opacity: '0' }, { opacity: '1' }, '2')
+    .fromTo(to.children[1].children[2].children[2], .5, { opacity: '0' }, { opacity: '1' }, '2')
     // .fromTo(to.children[0].children, .00, { opacity: '0' }, { opacity: '1' }, '0')
     // .fromTo(to.children[0].children[1], .00, { opacity: '0' }, { opacity: '1' }, '0')
     // .fromTo(to.children[1], .00, { opacity: '0', display: 'none' }, { opacity: '1', display: 'flex' }, '0')
