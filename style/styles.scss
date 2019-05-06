@@ -590,8 +590,8 @@ footer {
 
 .navigation-button {
 
-  height: 2rem;
-  width: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
   position: fixed;
   top: 2rem;
   right: 2rem;
@@ -606,6 +606,7 @@ footer {
     width: 2rem;
     background: black;
     display: inline-block;
+    transform: translateY(.5rem);
   }
 
   &::after {
