@@ -24,7 +24,50 @@ $(document).on('click', (e) => {
   }
 });
 
+
 $(document).ready(() => {
+  $('.lunaire').mouseover(() => {
+      $('.lunaire').addClass('projects-nav_tag-hover');
+      $('.zogra').addClass('sibling-is-hovered');
+      $('.hawaii').addClass('sibling-is-hovered');
+      $('.projects-nav').addClass('lunaire-background-image');
+  });
+  
+   $('.lunaire').mouseleave(() => {
+      $('.lunaire').removeClass('projects-nav_tag-hover');
+      $('.zogra').removeClass('sibling-is-hovered');
+      $('.hawaii').removeClass('sibling-is-hovered');
+      $('.projects-nav').removeClass('lunaire-background-image');
+   })
+
+   $('.zogra').mouseover(() => {
+      $('.zogra').addClass('projects-nav_tag-hover');
+      $('.lunaire').addClass('sibling-is-hovered');
+      $('.hawaii').addClass('sibling-is-hovered');
+      $('.projects-nav').addClass('zogra-background-image');
+});
+
+ $('.zogra').mouseleave(() => {
+    $('.zogra').removeClass('projects-nav_tag-hover');
+    $('.lunaire').removeClass('sibling-is-hovered');
+    $('.hawaii').removeClass('sibling-is-hovered');
+    $('.projects-nav').removeClass('zogra-background-image');
+ })
+
+ $('.hawaii').mouseover(() => {
+    $('.hawaii').addClass('projects-nav_tag-hover');
+    $('.lunaire').addClass('sibling-is-hovered');
+    $('.zogra').addClass('sibling-is-hovered');
+    $('.projects-nav').addClass('hawaii-background-image');
+});
+
+$('.hawaii').mouseleave(() => {
+  $('.hawaii').removeClass('projects-nav_tag-hover');
+  $('.lunaire').removeClass('sibling-is-hovered');
+  $('.zogra').removeClass('sibling-is-hovered');
+  $('.projects-nav').removeClass('hawaii-background-image');
+})
+
   
   setTimeout(() => {
     $('.splash-page_logo').addClass('slider');
