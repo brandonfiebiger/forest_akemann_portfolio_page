@@ -1,0 +1,672 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.projects-nav_container {
+  height: 100vh;
+  width: 100%;
+  font-family: inherit;
+  position: absolute;
+  transition: all 0.5s ease-in;
+}
+
+.projects-nav_header {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.projects-nav_header-tag {
+  margin: 3rem;
+  color: #332D33;
+  font-family: inherit;
+  font-weight: 300;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+
+.projects-nav {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-nav_tag {
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  color: #292438;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  font-weight: 600;
+}
+
+.projects-nav .lunaire {
+  transform: translateY(-0.5rem);
+}
+
+.visible {
+  opacity: 1;
+}
+
+.translate_y {
+  transform: translateY(-0.5rem);
+}
+
+.splash-page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash-page_logo {
+  background-image: linear-gradient(90deg, #fff 0%, #fff 2%, #292438 0%);
+  background-size: 200%;
+  width: 30rem;
+  transition: all 0.5s;
+}
+
+.slider {
+  background-size: 5000%;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.display_none {
+  display: none;
+}
+
+.header-img {
+  width: 100%;
+}
+
+.project-page {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  font-family: inherit;
+  word-wrap: break-word;
+}
+
+.project-page_header {
+  height: 100vh;
+  width: 100%;
+  transition: all 0.3s ease-in;
+  background-image: url("/lunaire-header.6c406afe.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-page_header h1 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  transform: translateY(-0.75rem);
+  color: #FFFFFF;
+  transition: all 0.5s ease-in;
+}
+
+.hawaii-header {
+  background-image: url("/hawaii-header.e0e25086.jpg");
+}
+
+.zogra-header {
+  background-image: url("/zogra-round-header.c5e34283.jpg");
+}
+
+.first-text-section {
+  width: 85%;
+  margin: 0 auto;
+  transform: translateY(6rem);
+  transition: all 0.5s;
+}
+.first-text-section_header-two {
+  transform: translateY(2rem);
+}
+.first-text-section-left-half {
+  float: left;
+}
+.first-text-section-right-half {
+  width: 95%;
+}
+.first-text-section-right-half-row {
+  float: right;
+  width: 70%;
+  margin-bottom: 6rem;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.first-text-section-right-half-row .sub-header {
+  display: inline-block;
+}
+.first-text-section-right-half-row .full-paragraph {
+  display: inline-block;
+  width: 35rem;
+  word-wrap: break-word;
+}
+.first-text-section div ul {
+  list-style: none;
+}
+.first-text-section div ul li {
+  font-size: 0.95rem;
+}
+
+.sub-header {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.slide-header-up {
+  height: 55vh;
+}
+
+.slide-text-up {
+  transform: translateY(5rem);
+}
+
+.hawaii-strategy {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-around;
+  margin: 0 auto;
+  position: relative;
+  transform: translateY(5rem);
+}
+.hawaii-strategy-text {
+  width: 56%;
+  height: auto;
+  margin-left: 44%;
+  transform: translateY(4rem);
+}
+.hawaii-strategy-text h2 {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.hawaii-strategy-text p {
+  margin-bottom: 2rem;
+  width: 80%;
+}
+.hawaii-strategy .img-section {
+  position: absolute;
+  left: 0;
+  width: 30%;
+}
+.hawaii-strategy .img-section .img-first {
+  width: 100%;
+}
+.hawaii-strategy .img-section .wavy {
+  width: 85%;
+  position: absolute;
+  bottom: 8%;
+  left: 60%;
+}
+
+.zogra-first {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-around;
+  margin: 0 auto;
+  position: relative;
+  transform: translateY(5rem);
+}
+.zogra-first-text {
+  width: 56%;
+  height: auto;
+  margin-left: 46%;
+  transform: translateY(20%);
+}
+.zogra-first-text h2 {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.zogra-first-text p {
+  margin-bottom: 2rem;
+  width: 80%;
+}
+.zogra-first .img-section {
+  position: absolute;
+  left: 10%;
+  width: 30%;
+}
+.zogra-first .img-section .img-first {
+  width: 100%;
+}
+.zogra-first .img-section .wavy {
+  width: 85%;
+  position: absolute;
+  bottom: 8%;
+  left: 60%;
+}
+
+hr {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo-description {
+  margin: 0 auto;
+  margin-top: 4rem;
+  width: 40%;
+  text-align: left;
+}
+.logo-description h2 {
+  margin-bottom: 2rem;
+}
+.logo-description p {
+  font-weight: light;
+}
+
+.zogra-strategy {
+  margin-top: 7rem;
+}
+
+.zogra-design p {
+  margin-bottom: 2rem;
+}
+
+.round-designs {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+.round-designs img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.round-designs p {
+  font-size: 0.75rem;
+}
+.round-designs .round-description {
+  float: right;
+  margin-top: 2rem;
+}
+
+.typeface-1 {
+  margin-top: 9rem;
+  width: 80%;
+}
+
+.zogra-image-container {
+  margin-top: 12rem;
+  width: 80%;
+}
+.zogra-image-container img {
+  margin-bottom: 4rem;
+}
+.zogra-image-container > * {
+  margin-bottom: 4rem;
+}
+
+.zogra-full {
+  width: 80%;
+  display: block;
+}
+
+.third-round-designs {
+  margin: 0 auto;
+  margin-top: 4rem;
+  width: 85%;
+}
+.third-round-designs p {
+  font-size: 0.75rem;
+  transform: translateX(15%);
+}
+.third-round-designs .logo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.third-round-designs .logo-container img {
+  width: 35rem;
+  margin-right: 2rem;
+}
+
+.design-section {
+  width: 100%;
+}
+
+.design-section-description {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 4rem;
+  text-align: left;
+}
+.design-section-description h2 {
+  margin-bottom: 2rem;
+}
+
+.image-section-primary {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 4rem;
+  position: relative;
+}
+.image-section-primary .sepia-sail {
+  width: 100%;
+  display: inline-block;
+  margin: 0 auto;
+}
+.image-section-primary .circle {
+  position: absolute;
+  right: -10%;
+  bottom: -15%;
+  width: 20%;
+}
+
+.color-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 8rem;
+  width: 100%;
+  position: relative;
+}
+.color-section h3 {
+  transform: rotate(-90deg);
+  position: absolute;
+  left: 8%;
+  top: 3%;
+}
+
+.color-container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 3%;
+}
+
+.color-block {
+  width: 16rem;
+  height: 16rem;
+  margin-right: 2rem;
+  margin-bottom: 3rem;
+}
+
+.fonts-image {
+  margin: 0 auto;
+  display: block;
+  width: 75%;
+}
+
+.ux-design-text {
+  margin: 0 auto;
+  margin-top: 4rem;
+  width: 55%;
+}
+.ux-design-text > * {
+  margin-bottom: 2rem;
+}
+
+.image-block {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+.image-block img {
+  width: 100%;
+}
+.image-block p {
+  font-size: 0.75rem;
+  float: right;
+}
+
+.hawaii-sail-full-site {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.nav-container {
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+}
+
+footer {
+  margin-top: 4rem;
+  height: 6rem;
+  display: flex;
+  position: relative;
+}
+footer h3 {
+  font-size: 3rem;
+  align-self: center;
+}
+footer .footer-right {
+  background: #292438;
+  width: 80%;
+  height: 6rem;
+  position: absolute;
+  right: 0;
+}
+footer > * {
+  display: inline-block;
+}
+
+.navigation-nav {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #292438;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  z-index: 200000000;
+  transition: all 0.3s;
+}
+.navigation-nav p {
+  color: #EFEFEF;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+}
+.navigation-nav ul {
+  list-style: none;
+  text-align: center;
+}
+.navigation-nav ul a {
+  color: #EFEFEF;
+  font-size: 4rem;
+}
+
+.navigation-button {
+  height: 2rem;
+  width: 2rem;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  z-index: 10000;
+}
+.navigation-button-appearance, .navigation-button-appearance::after {
+  height: 2px;
+  width: 2rem;
+  background: black;
+  display: inline-block;
+}
+.navigation-button-appearance::after {
+  content: "";
+  width: 1rem;
+  transform: translateX(1rem);
+}
+
+.slide-nav-out {
+  left: 0;
+}
+
+.about-page {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  transition: all 0.3s ease-in;
+}
+.about-page .text-area {
+  height: 30vh;
+  width: 50%;
+  transform: translateY(-8rem) translateX(6rem);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.about-page .page-container {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+.about-page .page-container .navigation-button {
+  background: #fff;
+}
+.about-page-left {
+  background: #fff;
+  float: left;
+  height: 100vh;
+  width: 25%;
+}
+.about-page-right {
+  background: #292438;
+  float: right;
+  height: 100vh;
+  width: 75%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-page-right h1 {
+  float: right;
+  color: #fff;
+  font-size: 9rem;
+  transition: all 0.3s ease-in;
+}
+.about-page-right p {
+  color: #fff;
+  width: 80%;
+  transform: translateY(-1rem);
+  transition: all 0.3s ease-in;
+}
+.about-page .forrest-pic {
+  position: absolute;
+  width: 65%;
+  bottom: 0;
+  right: 50%;
+  transition: all 0.3s ease-in;
+}
+
+.horizantal-scroll {
+  margin-top: 12rem;
+  position: relative;
+}
+.horizantal-scroll p {
+  position: absolute;
+  top: -3rem;
+  right: 35%;
+}
+.horizantal-scroll-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: scroll;
+}
+.horizantal-scroll-container img {
+  width: 25%;
+  height: 0%;
+  margin-right: 2rem;
+}
+
+.corners img {
+  width: 40%;
+}
+
+.narrowed-down {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 8rem;
+  text-align: right;
+  position: relative;
+}
+.narrowed-down img {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+.narrowed-down p {
+  margin-bottom: 4rem;
+  transform: translateX(-5%);
+}
+
+.lunaire-image-section {
+  width: 80%;
+  margin: 0 auto;
+  transform: translateY(4rem);
+  margin-top: 4rem;
+}
+.lunaire-image-section img {
+  width: 100%;
+}
+.lunaire-image-section p {
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.lunaire-paragraph {
+  width: 44rem;
+  margin: 0 auto;
+  margin-top: 14rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.lunaire-color-section {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-around;
+}
+.lunaire-color-section h2 {
+  transform: rotate(-90deg) translateY(65%) translateX(1rem);
+}
+.lunaire-color-section .lunaire-color {
+  background: #DBDBDB;
+  border: 6px solid #FFFFFF;
+  height: 8rem;
+  width: 8rem;
+}
+
+/*# sourceMappingURL=/project-page.c70d338e.css.map */
