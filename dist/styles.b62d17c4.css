@@ -39,6 +39,28 @@ a {
   transition: all 0.5s ease-in;
 }
 
+.projects-nav_tag {
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 6rem;
+  margin-bottom: 0.5rem;
+  color: #292438;
+  pointer-events: auto;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  font-weight: 900;
+  position: relative;
+  z-index: 3;
+  -webkit-text-fill-color: transparent;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #292438;
+}
+.projects-nav_tag:hover {
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke-color: #fff;
+}
+
 .projects-nav {
   height: 65vh;
   width: 80%;
@@ -48,48 +70,37 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  pointer-events: none;
   background-size: cover;
   background-position: center;
 }
+.projects-nav:hover > .projects-nav_tag:not(:hover) {
+  -webkit-text-stroke-color: #fff;
+}
 
-.lunaire-background-image {
+.lunaire {
+  transform: translateY(-0.5rem);
+}
+.lunaire:hover ~ .home-background-image {
   background-image: url("/lunaire-header.6c406afe.png");
 }
 
-.zogra-background-image {
+.zogra:hover ~ .home-background-image {
   background-image: url("/zogra-round-header.c5e34283.jpg");
 }
 
-.hawaii-background-image {
+.hawaii:hover ~ .home-background-image {
   background-image: url("/hawaii-header.e0e25086.jpg");
 }
 
-.projects-nav_tag {
-  text-transform: uppercase;
-  font-family: inherit;
-  font-size: 6rem;
-  margin-bottom: 0.5rem;
-  color: #292438;
-  opacity: 0;
-  transition: all 0.3s ease-in;
-  font-weight: 900;
-  -webkit-text-fill-color: transparent;
-  /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: #292438;
-}
-
-.projects-nav_tag-hover {
-  -webkit-text-fill-color: #fff;
-  -webkit-text-stroke-color: #fff;
-}
-
-.sibling-is-hovered {
-  -webkit-text-stroke-color: #fff;
-}
-
-.projects-nav .lunaire {
-  transform: translateY(-0.5rem);
+.home-background-image {
+  width: 80%;
+  top: 10rem;
+  height: 65vh;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
 }
 
 .visible {
