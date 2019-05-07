@@ -82,14 +82,17 @@ a {
   transform: translateY(-0.5rem);
 }
 .lunaire:hover ~ .home-background-image {
+  opacity: 1;
   background-image: url("/lunaire-header.6c406afe.png");
 }
 
 .zogra:hover ~ .home-background-image {
+  opacity: 1;
   background-image: url("/zogra-round-header.c5e34283.jpg");
 }
 
 .hawaii:hover ~ .home-background-image {
+  opacity: 1;
   background-image: url("/hawaii-header.e0e25086.jpg");
 }
 
@@ -101,6 +104,8 @@ a {
   background-size: cover;
   background-position: center;
   z-index: 1;
+  opacity: 0;
+  transition: all 1s;
 }
 
 .visible {
