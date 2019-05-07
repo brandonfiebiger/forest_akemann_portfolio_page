@@ -39,6 +39,29 @@ a {
   transition: all .5s ease-in;
 }
 
+.projects-nav_tag {
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 6rem;
+  margin-bottom: .5rem;
+  color: #292438;
+  pointer-events: auto;
+  opacity: 0;
+  transition: all .3s ease-in;
+  font-weight: 900;
+  position: relative;
+  z-index: 3;
+
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #292438;
+
+  &:hover {
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-color: #fff;
+  }
+}
+
 .projects-nav {
   height: 65vh;
   width: 80%;
@@ -48,58 +71,40 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  pointer-events: none;
   background-size: cover;
   background-position: center;
+  &:hover > .projects-nav_tag:not(:hover) {
+    -webkit-text-stroke-color: #fff;
+  }
 }
 
-.lunaire-background-image {
-  background-image: url('../assets/lunaire-header.png');
+.lunaire {
+  transform: translateY(-.5rem);
+  
+  &:hover ~ .home-background-image {
+    background-image: url('../assets/lunaire-header.png');
+  }
 }
 
-.zogra-background-image {
-  background-image: url('../assets/zogra-round-header.jpg');
+.zogra {
+  &:hover ~ .home-background-image {
+    background-image: url('../assets/zogra-round-header.jpg');
+  }
 }
 
-.hawaii-background-image {
+.hawaii:hover ~ .home-background-image {
   background-image: url('../assets/hawaii-header.jpg');
 }
 
-.projects-nav_tag {
-  text-transform: uppercase;
-  font-family: inherit;
-  font-size: 6rem;
-  margin-bottom: .5rem;
-  color: #292438;
-  opacity: 0;
-  transition: all .3s ease-in;
-  font-weight: 900;
-
-  // color: black;
-  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: #292438;
-
-  // &:hover {
-  //   -webkit-text-fill-color: #fff;
-  //   -webkit-text-stroke-color: #fff;
-
-  //   & ~ a {
-  //    -webkit-text-stroke-color: #fff;
-  //   }
-  // }
-}
-
-.projects-nav_tag-hover {
-  -webkit-text-fill-color: #fff;
-  -webkit-text-stroke-color: #fff;
-}
-
-.sibling-is-hovered {
-  -webkit-text-stroke-color: #fff;
-}
-
-.projects-nav .lunaire {
-  transform: translateY(-.5rem);
+.home-background-image {
+  width: 80%;
+  top: 10rem;
+  height: 65vh;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
 }
 
 .visible {
