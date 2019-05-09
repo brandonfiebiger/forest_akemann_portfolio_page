@@ -9,7 +9,7 @@ class SlideUpAboutPage extends Highway.Transition {
 
     const timeline = new TimelineLite();
 
-    timeline.fromTo(to, .2, { top: '100%' }, {top: '0%', onComplete: function(){
+    timeline.fromTo(to, .2, { left: '100%' }, {left: '0%', onComplete: function(){
       from.remove();
       done();
     }}, '+=.5')
