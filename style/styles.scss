@@ -422,7 +422,14 @@ hr {
 
 .typeface-1 {
   margin-top: 9rem;
-  width: 80%
+  width: 80%;
+  box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.55);
+}
+
+.fontlab {
+  img {
+    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.55);
+  }
 }
 
 .zogra-image-container {
@@ -441,6 +448,8 @@ hr {
 .zogra-full {
   width: 80%;
   display: block;
+  box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.55);
+  margin: 0 auto;
 }
 
 .third-round-designs {
@@ -829,6 +838,7 @@ footer {
     flex-direction: row;
     width: 100%;
     overflow: scroll;
+    padding: 1rem;
 
     img {
       width: 25%;
@@ -841,6 +851,7 @@ footer {
 .corners {
   img {
     width: 40%;
+    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.55);
   }
 }
 
