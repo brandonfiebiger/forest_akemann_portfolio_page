@@ -3,7 +3,7 @@ import { TimelineLite } from 'gsap';
 
 
 
-class SlideUpAboutPage extends Highway.Transition {
+class SlideOutContactPage extends Highway.Transition {
   // responsible for page coming in
   in({ from, to, done }) {
 
@@ -32,4 +32,4 @@ class SlideUpAboutPage extends Highway.Transition {
 }
 
 
-export default SlideUpAboutPage;
+export default SlideOutContactPage;

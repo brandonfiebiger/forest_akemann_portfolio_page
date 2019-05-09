@@ -47,7 +47,7 @@ a {
   color: #292438;
   pointer-events: auto;
   opacity: 0;
-  transition: all .3s ease-in;
+  transition: opacity .3s ease-in;
   font-weight: 900;
   position: relative;
   z-index: 3;
@@ -83,17 +83,20 @@ a {
   transform: translateY(-.5rem);
   
   &:hover ~ .home-background-image {
+    opacity: 1;
     background-image: url('../assets/lunaire-header.png');
   }
 }
 
 .zogra {
   &:hover ~ .home-background-image {
+    opacity: 1;
     background-image: url('../assets/zogra-round-header.jpg');
   }
 }
 
 .hawaii:hover ~ .home-background-image {
+  opacity: 1;
   background-image: url('../assets/hawaii-header.jpg');
 }
 
@@ -105,6 +108,8 @@ a {
   background-size: cover;
   background-position: center;
   z-index: 1;
+  opacity: 0;
+  transition: all .2s;
 }
 
 .visible {
@@ -154,6 +159,20 @@ a {
   width: 100%;
   font-family: inherit;
   word-wrap:break-word;
+
+  .forrest-logo {
+    position: fixed;
+    z-index: 99999;
+    top: 2rem;
+    right: 50%;
+    height: 4rem;
+    width: 3rem;
+    font-size: -1rem;
+    transition: all .3s;
+    mix-blend-mode: difference;
+    cursor: pointer;
+    /* background: black; */
+  }
 }
 
 .project-page_header {
@@ -388,7 +407,6 @@ hr {
     width: 100%;
     display: block;
     margin: 0 auto;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   }
 
   p {
@@ -687,7 +705,7 @@ footer {
   left: 0;
 }
 
-.about-page {
+.about-and-contact-page {
   position: absolute;
   height: 100vh;
   width: 100%;
@@ -738,14 +756,14 @@ footer {
     justify-content: center;
     align-items: center;
 
-    h1 {
+    .about-h1 {
       float: right;
       color: #fff;
       font-size: 9rem;
       transition: all .3s ease-in;
     }
 
-    p {
+    .about-p {
       color: #fff;
       width: 80%;
       transform: translateY(-1rem);
@@ -766,6 +784,30 @@ footer {
     bottom: 0;
     right: 50%;
     transition: all .3s ease-in;
+  }
+}
+
+.contact-text-area {
+  color: #EFEFEF;
+  text-align: left;
+  width: 19rem;
+  position: absolute;
+  left: 45%;
+  top: 11rem;
+
+  h1 {
+    font-size: 9rem;
+    height: 13.5rem;
+  }
+
+  p {
+    font-weight: 300;
+    height: 4.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 600;
   }
 }
 

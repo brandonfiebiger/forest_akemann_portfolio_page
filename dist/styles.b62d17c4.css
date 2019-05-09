@@ -47,7 +47,7 @@ a {
   color: #292438;
   pointer-events: auto;
   opacity: 0;
-  transition: all 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
   font-weight: 900;
   position: relative;
   z-index: 3;
@@ -82,14 +82,17 @@ a {
   transform: translateY(-0.5rem);
 }
 .lunaire:hover ~ .home-background-image {
+  opacity: 1;
   background-image: url("/lunaire-header.6c406afe.png");
 }
 
 .zogra:hover ~ .home-background-image {
+  opacity: 1;
   background-image: url("/zogra-round-header.c5e34283.jpg");
 }
 
 .hawaii:hover ~ .home-background-image {
+  opacity: 1;
   background-image: url("/hawaii-header.e0e25086.jpg");
 }
 
@@ -101,6 +104,8 @@ a {
   background-size: cover;
   background-position: center;
   z-index: 1;
+  opacity: 0;
+  transition: all 0.2s;
 }
 
 .visible {
@@ -148,6 +153,19 @@ a {
   width: 100%;
   font-family: inherit;
   word-wrap: break-word;
+}
+.project-page .forrest-logo {
+  position: fixed;
+  z-index: 99999;
+  top: 2rem;
+  right: 50%;
+  height: 4rem;
+  width: 3rem;
+  font-size: -1rem;
+  transition: all 0.3s;
+  mix-blend-mode: difference;
+  cursor: pointer;
+  /* background: black; */
 }
 
 .project-page_header {
@@ -351,7 +369,6 @@ hr {
   width: 100%;
   display: block;
   margin: 0 auto;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .round-designs p {
   font-size: 0.75rem;
@@ -581,13 +598,13 @@ footer > * {
   left: 0;
 }
 
-.about-page {
+.about-and-contact-page {
   position: absolute;
   height: 100vh;
   width: 100%;
   transition: all 0.3s ease-in;
 }
-.about-page .text-area {
+.about-and-contact-page .text-area {
   height: 30vh;
   width: 50%;
   transform: translateY(-8rem) translateX(6rem);
@@ -595,24 +612,24 @@ footer > * {
   align-items: center;
   flex-direction: column;
 }
-.about-page .page-container {
+.about-and-contact-page .page-container {
   height: 100vh;
   width: 100%;
   position: absolute;
 }
-.about-page .page-container .navigation-button-appearance {
+.about-and-contact-page .page-container .navigation-button-appearance {
   background: #fff;
 }
-.about-page .page-container .navigation-button-appearance::after {
+.about-and-contact-page .page-container .navigation-button-appearance::after {
   background: #fff;
 }
-.about-page-left {
+.about-and-contact-page-left {
   background: #fff;
   float: left;
   height: 100vh;
   width: 25%;
 }
-.about-page-right {
+.about-and-contact-page-right {
   background: #292438;
   float: right;
   height: 100vh;
@@ -622,30 +639,51 @@ footer > * {
   justify-content: center;
   align-items: center;
 }
-.about-page-right h1 {
+.about-and-contact-page-right .about-h1 {
   float: right;
   color: #fff;
   font-size: 9rem;
   transition: all 0.3s ease-in;
 }
-.about-page-right p {
+.about-and-contact-page-right .about-p {
   color: #fff;
   width: 80%;
   transform: translateY(-1rem);
   transition: all 0.3s ease-in;
 }
-.about-page-right .forrest-logo {
+.about-and-contact-page-right .forrest-logo {
   position: absolute;
   top: 3rem;
   right: 68%;
   width: 3rem;
 }
-.about-page .forrest-pic {
+.about-and-contact-page .forrest-pic {
   position: absolute;
   width: 65%;
   bottom: 0;
   right: 50%;
   transition: all 0.3s ease-in;
+}
+
+.contact-text-area {
+  color: #EFEFEF;
+  text-align: left;
+  width: 19rem;
+  position: absolute;
+  left: 45%;
+  top: 11rem;
+}
+.contact-text-area h1 {
+  font-size: 9rem;
+  height: 13.5rem;
+}
+.contact-text-area p {
+  font-weight: 300;
+  height: 4.5rem;
+}
+.contact-text-area h3 {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .horizantal-scroll {
