@@ -398,6 +398,10 @@ hr {
   }
 }
 
+.laser-etched {
+  box-shadow: 0px 3px 6px #000000;
+}
+
 .round-designs {
   width: 60%;
   margin: 0 auto;
@@ -407,6 +411,7 @@ hr {
     width: 100%;
     display: block;
     margin: 0 auto;
+    box-shadow: 0px 3px 6px #000000;
   }
 
   p {
@@ -422,7 +427,14 @@ hr {
 
 .typeface-1 {
   margin-top: 9rem;
-  width: 80%
+  width: 80%;
+  box-shadow: 0px 3px 6px #000000;
+}
+
+.fontlab {
+  img {
+    box-shadow: 0px 3px 6px #000000;
+  }
 }
 
 .zogra-image-container {
@@ -441,6 +453,8 @@ hr {
 .zogra-full {
   width: 80%;
   display: block;
+  box-shadow: 0px 3px 6px #000000;
+  margin: 0 auto;
 }
 
 .third-round-designs {
@@ -460,7 +474,10 @@ hr {
 
     img {
       width: 35rem;
+      height: 25rem;
       margin-right: 2rem;
+      margin-bottom: 3rem;
+      box-shadow: 0px 3px 6px #000000;
     }
   }
 }
@@ -531,6 +548,7 @@ hr {
   height: 16rem;
   margin-right: 2rem;
   margin-bottom: 3rem;
+  box-shadow: 0px 3px 6px #000000;
 }
 
 .fonts-image {
@@ -829,6 +847,7 @@ footer {
     flex-direction: row;
     width: 100%;
     overflow: scroll;
+    padding: 1rem;
 
     img {
       width: 25%;
@@ -841,6 +860,7 @@ footer {
 .corners {
   img {
     width: 40%;
+    box-shadow: 0px 3px 6px #000000;
   }
 }
 
