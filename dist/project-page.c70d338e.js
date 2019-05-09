@@ -15999,7 +15999,11 @@ function (_Highway$Transition) {
         opacity: '0'
       }, {
         opacity: '1'
-      }, '+=.75').fromTo(to.children[2], .2, {
+      }, '+=.75').fromTo(to.children[1].children[2], .2, {
+        opacity: '0'
+      }, {
+        opacity: '1'
+      }, '+=.2').fromTo(to.children[2], .2, {
         opacity: '0',
         transform: 'translateY(6rem)'
       }, {
@@ -16173,9 +16177,9 @@ function (_Highway$Transition) {
           done = _ref.done;
       var timeline = new _gsap.TimelineLite();
       timeline.fromTo(to, .2, {
-        top: '100%'
+        left: '100%'
       }, {
-        top: '0%',
+        left: '0%',
         onComplete: function onComplete() {
           from.remove();
           done();
@@ -16215,6 +16219,100 @@ function (_Highway$Transition) {
 
 var _default = SlideUpAboutPage;
 exports.default = _default;
+},{"@dogstudio/highway":"node_modules/@dogstudio/highway/build/highway.js","gsap":"node_modules/gsap/index.js"}],"js/slide_out_contact_page.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _highway = _interopRequireDefault(require("@dogstudio/highway"));
+
+var _gsap = require("gsap");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var SlideOutContactPage =
+/*#__PURE__*/
+function (_Highway$Transition) {
+  _inherits(SlideOutContactPage, _Highway$Transition);
+
+  function SlideOutContactPage() {
+    _classCallCheck(this, SlideOutContactPage);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(SlideOutContactPage).apply(this, arguments));
+  }
+
+  _createClass(SlideOutContactPage, [{
+    key: "in",
+    // responsible for page coming in
+    value: function _in(_ref) {
+      var from = _ref.from,
+          to = _ref.to,
+          done = _ref.done;
+      var timeline = new _gsap.TimelineLite();
+      timeline.fromTo(to, .2, {
+        left: '100%'
+      }, {
+        left: '0%',
+        onComplete: function onComplete() {
+          from.remove();
+          done();
+        }
+      }, '+=.5').fromTo(to.children[1].children[2].children[1].children[0], .2, {
+        opacity: '0'
+      }, {
+        opacity: '1'
+      }, '1').fromTo(to.children[1].children[2].children[1].children[1], .5, {
+        opacity: '0'
+      }, {
+        opacity: '1'
+      }, '2').fromTo(to.children[1].children[2].children[2], .5, {
+        opacity: '0'
+      }, {
+        opacity: '1'
+      }, '2'); // .fromTo(to.children[0].children, .00, { opacity: '0' }, { opacity: '1' }, '0')
+      // .fromTo(to.children[0].children[1], .00, { opacity: '0' }, { opacity: '1' }, '0')
+      // .fromTo(to.children[1], .00, { opacity: '0', display: 'none' }, { opacity: '1', display: 'flex' }, '0')
+      // .fromTo(to.children[1].children, .00, { opacity: '0' }, { opacity: '1'}, '0')
+      // .fromTo(to.children[1].children[1], .2, {opacity: '0'}, {opacity: '1'}, '+=.75')
+      // .fromTo(to.children[2], .2, {opacity: '0', transform: 'translateY(6rem)'}, {opacity: 1, transform: 'translateY(5rem)'}, '+=1')
+      // .FromTo('.lunaire-page_header', 5, {opacity: '0'}, {opacity: '1'}, 5)
+    } //responsible for page going out
+
+  }, {
+    key: "out",
+    value: function out(_ref2) {
+      var from = _ref2.from,
+          done = _ref2.done;
+      done();
+    }
+  }]);
+
+  return SlideOutContactPage;
+}(_highway.default.Transition);
+
+var _default = SlideOutContactPage;
+exports.default = _default;
 },{"@dogstudio/highway":"node_modules/@dogstudio/highway/build/highway.js","gsap":"node_modules/gsap/index.js"}],"js/main.js":[function(require,module,exports) {
 "use strict";
 
@@ -16233,6 +16331,8 @@ var _slide_up_no_fade = _interopRequireDefault(require("./slide_up_no_fade"));
 
 var _slide_up_about_page = _interopRequireDefault(require("./slide_up_about_page"));
 
+var _slide_out_contact_page = _interopRequireDefault(require("./slide_out_contact_page"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var H = new _highway.default.Core({
@@ -16240,6 +16340,7 @@ var H = new _highway.default.Core({
     lunaire: _slide_up.default,
     home: _slide_up_no_fade.default,
     about: _slide_up_about_page.default,
+    contact: _slide_out_contact_page.default,
     hawaii: _slide_up.default,
     "zogra-round": _slide_up.default
   }
@@ -16300,7 +16401,7 @@ var showProject = function showProject() {
 
 
 exports.showProject = showProject;
-},{"@dogstudio/highway":"node_modules/@dogstudio/highway/build/highway.js","gsap":"node_modules/gsap/index.js","./slide_up":"js/slide_up.js","./slide_up_no_fade":"js/slide_up_no_fade.js","./slide_up_about_page":"js/slide_up_about_page.js"}],"js/project-page.js":[function(require,module,exports) {
+},{"@dogstudio/highway":"node_modules/@dogstudio/highway/build/highway.js","gsap":"node_modules/gsap/index.js","./slide_up":"js/slide_up.js","./slide_up_no_fade":"js/slide_up_no_fade.js","./slide_up_about_page":"js/slide_up_about_page.js","./slide_out_contact_page":"js/slide_out_contact_page.js"}],"js/project-page.js":[function(require,module,exports) {
 "use strict";
 
 var _main = require("./main");
