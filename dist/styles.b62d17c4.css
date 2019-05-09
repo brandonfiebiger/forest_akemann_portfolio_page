@@ -360,6 +360,10 @@ hr {
   margin-bottom: 2rem;
 }
 
+.laser-etched {
+  box-shadow: 0px 3px 6px #000000;
+}
+
 .round-designs {
   width: 60%;
   margin: 0 auto;
@@ -369,6 +373,7 @@ hr {
   width: 100%;
   display: block;
   margin: 0 auto;
+  box-shadow: 0px 3px 6px #000000;
 }
 .round-designs p {
   font-size: 0.75rem;
@@ -382,11 +387,11 @@ hr {
 .typeface-1 {
   margin-top: 9rem;
   width: 80%;
-  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 3px 6px #000000;
 }
 
 .fontlab img {
-  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 3px 6px #000000;
 }
 
 .zogra-image-container {
@@ -403,7 +408,7 @@ hr {
 .zogra-full {
   width: 80%;
   display: block;
-  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 3px 6px #000000;
   margin: 0 auto;
 }
 
@@ -423,7 +428,10 @@ hr {
 }
 .third-round-designs .logo-container img {
   width: 35rem;
+  height: 25rem;
   margin-right: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0px 3px 6px #000000;
 }
 
 .design-section {
@@ -485,6 +493,7 @@ hr {
   height: 16rem;
   margin-right: 2rem;
   margin-bottom: 3rem;
+  box-shadow: 0px 3px 6px #000000;
 }
 
 .fonts-image {
@@ -720,7 +729,7 @@ footer > * {
 
 .corners img {
   width: 40%;
-  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 3px 6px #000000;
 }
 
 .narrowed-down {
