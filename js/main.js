@@ -3,12 +3,14 @@ import { TimelineLite } from 'gsap';
 import SlideUp from './slide_up';
 import SlideUpNoFade from './slide_up_no_fade';
 import SlideUpAboutPage from './slide_up_about_page';
+import SlideOutContactPage from './slide_out_contact_page';
 
 const H = new Highway.Core({
   transitions: {
     lunaire: SlideUp,
     home: SlideUpNoFade,
     about: SlideUpAboutPage,
+    contact: SlideOutContactPage,
     hawaii: SlideUp,
     "zogra-round": SlideUp
   }
